@@ -1,0 +1,27 @@
+body{
+    background: url(../images/design.jpg) no-repeat center/cover;
+}
+
+h1{
+    color: blue;
+}
+
+.bg1{
+    background: url(../images/bridge.jpg) no-repeat center/cover;
+    border: 1px solid goldenrod;
+}
+
+.bg2{
+    background: url(../images/des.jpg) no-repeat center/cover;
+    border: 1px solid gold;
+}
+
+.color{
+    color: white;
+}
+
+.font{
+    font-size: 22px;
+    font-weight: bold;
+    color:aquamarine;
+}

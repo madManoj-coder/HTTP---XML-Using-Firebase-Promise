@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP - XMLRequest Using firebase</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <h1 class="p-4 mb-4 text-center bg-alert-warning">HTTP - XMLRequest Using Firebase</h1>
+  <div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card mb-4 bg1">
+                <div class="card-body">
+                    <form id="postForm">
+                        <div class="form-group">
+                            <label for="title" class="font">Title</label>
+                            <input type="text" required id="title" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="body" class="font">Content</label>
+                            <textarea type="text" rows="4" required id="body" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="userId" class="font">UserId</label>
+                            <select type="text" required id="userId" class="form-control">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                        <div class="text-right">
+                            <button class="btn btn-outline-success" type="submit" id="submitBtn">Add post</button>
+                            <button class="btn btn-outline-warning d-none" type="button" id="updateBtn">Update post</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="d-flex flex-column-reverse" id="postContainer">
+                <!-- <div class="card mb-4" id="card"> -->
+                    <!-- <div class="card-header">
+                        <h2>Title</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>Content</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <button class="btn btn-outline-primary">Edit</button>
+                        <button class="btn btn-outline-danger">Delete</button>
+                    </div> -->
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+  </div>
+   
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js"></script>  
+  <script src="./assets/js/app.js"></script>  
+</body>
+</html>
